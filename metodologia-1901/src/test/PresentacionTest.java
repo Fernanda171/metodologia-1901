@@ -169,8 +169,10 @@ public class PresentacionTest extends javax.swing.JFrame {
             }
         }
         System.out.println("Indice"+indiceSeleccionado);
+        
+        JOptionPane.showConfirmDialog(this,""+evaluar(p1,indiceSeleccionado));
       
-        JOptionPane.showConfirmDialog(this,""+evaluar(p1,radios[indiceSeleccionado]));
+        // JOptionPane.showConfirmDialog(this,""+evaluar(p1,radios[indiceSeleccionado]));
         
     }//GEN-LAST:event_checarRespuestaActionPerformed
 
@@ -220,16 +222,23 @@ public class PresentacionTest extends javax.swing.JFrame {
     private javax.swing.JRadioButton radioOp4;
     private javax.swing.JRadioButton radioOp5;
     // End of variables declaration//GEN-END:variables
-public boolean evaluar(Pregunta p1, JRadioButton r){
-    boolean correcta=false;
-    for(int i=0;i<p1.opciones.length;i++){
-        if(p1.opciones[i].titulo.equals(r.getText())){
-            if(p1.opciones[i].correcta){
+//public boolean evaluar(Pregunta p1, JRadioButton r){
+  //  boolean correcta=false;
+    //for(int i=0;i<p1.opciones.length;i++){
+      //  if(p1.opciones[i].titulo.equals(r.getText())){
+        //    if(p1.opciones[i].correcta){
+           // correcta=true;
+            //break;
+        //}
+    //}
+    //}
+    //return correcta;
+//}
+    public boolean evaluar(Pregunta p1, int indiceSeleccionado){
+        boolean correcta=false;
+        if(p1.opciones[indiceSeleccionado].correcta){
             correcta=true;
-            break;
         }
-    }
-    }
-    return correcta;
-}
+        return correcta;
+    }    
 }
