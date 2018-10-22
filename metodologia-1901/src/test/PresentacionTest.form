@@ -32,7 +32,6 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="radioOp5" min="-2" max="-2" attributes="0"/>
                           <Component id="radioOp4" min="-2" max="-2" attributes="0"/>
                           <Component id="radioOp3" min="-2" max="-2" attributes="0"/>
                           <Component id="radioOp2" min="-2" max="-2" attributes="0"/>
@@ -41,6 +40,7 @@
                               <Component id="etiquetaTitulo" pref="284" max="32767" attributes="0"/>
                               <Component id="jLabel1" max="32767" attributes="0"/>
                           </Group>
+                          <Component id="radioOp5" alignment="0" min="-2" pref="77" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -68,8 +68,8 @@
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="radioOp4" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="radioOp5" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <Component id="radioOp5" min="-2" pref="18" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="checarRespuesta" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="70" max="32767" attributes="0"/>
           </Group>
