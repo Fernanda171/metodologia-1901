@@ -9,11 +9,13 @@ package herencias;
  *
  * @author T-107
  */
-public class Tarjeta {
+public abstract class Tarjeta {
     private int numero;
     private String nombre;
     private String tipo;
     private float saldo;
+    
+    public abstract void pagar(float deposito);
     
     public int getNumero(){
         return numero;
@@ -52,6 +54,20 @@ public class Tarjeta {
      */
     public void setTipo(String tipo) {
         this.tipo = tipo;
+    }
+
+    /**
+     * @return the saldo
+     */
+    public float getSaldo() {
+        return saldo;
+    }
+
+    /**
+     * @param saldo the saldo to set
+     */
+    public void setSaldo(float saldo) {
+        this.saldo = saldo;
     }
    
 }
